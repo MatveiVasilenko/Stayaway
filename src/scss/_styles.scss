@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700');
+
+$color-font: #fff;
+$text-font:'Titillium Web', sans-serif;
+$subcolor-font: #3c4f5e;
+$p-font: 1.5rem;
+
+
+* {
+	box-sizing: border-box;
+}
+html {
+  	height: 100%;
+  	font-size: 10px;
+}
+body {
+	font: 300 1.8rem/1.4 $text-font;
+	height: 100%;
+	color: $color-font;
+	overflow-x: hidden;    
+}
+.section {	
+	// background: #0c142a;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover;
+	position: relative;
+	&__img {
+		background-size: contain;
+	}
+	&--padding {
+		padding: 12rem 0;
+	}
+	&--gray {
+		background: #f3f6f9;
+	}
+	&__footer {
+		background: linear-gradient(to right, #0067b5, #06a6df);
+		padding: 25px 0;
+	}
+}
+
+
+//Header 
+.nav-link {
+	padding: 10px 20px;
+	@media screen and (max-width: 1366px){
+			font-size: 1.4rem;
+			padding: 5px !important;
+	}
+	@media screen and (max-width: 1024px){
+			font-size: 1.2rem;
+			padding: 10px !important;
+	}
+
+}
+.head-link {
+	border-radius: 2px;
+	&--blue {
+		background: linear-gradient(to right, #0067b5, #06a6df);
+		padding: 10px 20px;
+	}
+	&--yellow {
+		background: #ccdb39;
+		color: $subcolor-font;
+
+	}
+}
+
+
+
+//First section
+
+.dark-phone {
+	background: rgba(12,20,42, 0.6);
+}
+.first {
+	text-align: center;
+	&__title {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 6.6rem;
+		font-weight: 700;
+		padding: 1rem 0;
+		@media screen and (max-width: 1366px){
+			font-size: 5rem;
+		}
+		@media screen and (max-width: 768px){
+			font-size: 3rem;
+		}
+		@media screen and (max-height:400px){
+			font-size: 3rem;
+		}
+
+
+	}
+	&__subtitle {
+		font-size: 2.8rem;
+		padding: 1rem 0;
+		@media screen and (max-width: 1366px){
+			font-size: 1.8rem;
+			padding: 0.5rem 0;
+		}
+		@media screen and (max-width: 768px){
+			font-size: 1.4rem;
+			padding: 0.5rem 0;
+		}
+		@media screen and (max-height:400px){
+			padding: 0;
+			font-size: 1.3rem;
+		}
+
+
+
+		&--weight600 {
+			padding: 1rem 0;
+			font-weight: 600;
+			@media screen and (max-width: 1366px){
+			padding: 0;
+		}
+		}
+	}
+}
+.form-first {
+	padding: 0px 10px !important;
+	&__size{
+		padding: 30px 20px;
+		font-size: 1.8rem;
+		@media screen and (max-width: 1366px){
+			font-size: 1.8rem;
+			padding: 20px 20px;
+		}
+
+	}
+	&__btn {
+		line-height: 1;
+		padding: 0;
+		height: 62px;
+		border-radius: 2px;
+		font-size: 1.8rem;
+		@media screen and (max-width: 1366px){
+			height: 42px;
+		}
+
+	}
+}
+.clients {
+	background: #f3f6f9;
+	padding: 10px 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	// &__item img {
+	// 	@media screen and (max-width: 1024px){
+	// 	width: 250px !important;
+	// 	height: 10vh;
+	// 	}
+	// }
+	@media screen and (max-width: 1366px){
+		padding: 5px 20px;
+	}
+	@media screen and (max-height:400px){
+		padding: 0px 20px;
+	}
+}
+
+
+//Section-key
+
+.key {
+	text-align: center;
+	padding: 30px 30px;
+	&__img {
+		margin-bottom: 30px;
+		&--big {
+			margin-top: 30px;
+		}
+	}
+	&__shape {
+		// display: inline-block;
+			position: relative;
+		&--position {
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 72px;
+				height: 30px;
+				background: #000;
+				position: absolute;
+				top: 0;
+				left: 0;
+				
+				// transform: translate(-50%, -50%);
+			}
+		}
+	}
+	&__article {
+		color: $subcolor-font;
+		text-align: center;
+		line-height: 1.8;
+		padding: 15px 0;
+		&--left {
+			text-align: left;
+		}
+
+	}
+	//title for section WhyUs
+	&__title {
+		color: $subcolor-font;
+		font-size: 2.8rem;
+		font-weight: 600;
+		padding: 20px 0;
+	}
+}
+
+
+//Sliders 
+
+.sliders {
+	color: $subcolor-font;
+	text-align: center;
+	padding: 0 15px;
+	// height: 300px;
+	&__img {
+		height: 300px;
+		overflow: hidden;
+		width: 100%;
+		// position: relative;
+		&--h200 {
+			height: 150px;
+		}
+		&--pos {
+			width: 100%;
+			// position: absolute;
+			// top: 0;
+			// left: -50%;
+			// transform: translate(-50%, -50%);
+		}
+
+		// height: 300px;
+	}
+	&__name {
+		font-weight: 600;
+		font-size: 2.2rem;
+		padding-top: 15px;
+	}
+	&__proffession {
+		
+	}
+
+}
+.test2 {
+	height: 300px;
+	overflow: hidden;
+}
+
+//Section "Lets talk"
+
+.lisp-lets {
+	padding: 0;
+	& li {
+		display: flex;
+		align-items: center;
+		padding: 10px 0;
+	}
+	&__item {
+		color: $subcolor-font;
+		margin: 0;
+		padding-left: 20px;
+	}
+}
+
+//Footer 
+
+.lisp {
+		text-decoration: none;
+		list-style-type: none;
+		padding: 25px 0 ;
+		margin: 0;
+	li {
+		padding: 3px 0;
+		& a {
+			text-decoration: none;
+		}		
+	}
+}
+.footer-line {
+	position: relative;
+	padding-top: 25px;
+	&:after {
+		content: '';
+		// display: inline-block;
+		background: $color-font;
+		width: 100%;
+		height: 1px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		opacity: 0.7;
+	}
+}
+
+
+//Global class 
+.h2-title {
+	font-size: 4.6rem;
+	font-weight: 400;
+	color: $subcolor-font;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	margin-bottom: 10rem;
+	&--smallMargin {
+		margin-bottom: 2.5rem;
+	}
+	&:before {
+		content: '';
+		display: inline-block;
+		width: 72px;
+		height: 4px;
+		background: #ccdb39;
+		position: absolute;
+		bottom: -15px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.btn {
+	background: linear-gradient(to right, #0067b5, #06a6df);
+	color: $color-font;
+	&:hover {
+		opacity: 0.8;
+	}
+	&--width {
+		width: 250px;
+		// display: inline-block;
+	}
+
+}
