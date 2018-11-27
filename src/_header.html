@@ -1,22 +1,22 @@
 
-    <nav class="navbar navbar-expand-lg fixed-top design-nav my-3 py-5 px-5">
+    <nav class="navbar navbar-expand-lg fixed-top design-nav py-5 px-5" id="menu">
             <a class="navbar-brand" href="#home">
-                <img class="imgg" src="img/logo.png" alt="">
+                <img id="image" class="imgg" src="img/logo.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars paragragh h2--color"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" id="test">
                     <li class="nav-item active text-center">
-                        <a class="nav-link head-link head-link--yellow" href="#about">Start earning or save money by sharing
+                        <a class="nav-link head-link head-link--yellow"  href="#start">Start earning or save money by sharing
                         <span class="sr-only">(current)</span></a>
                      </li>
                     <li class="nav-item ml-5 text-center">
-                        <a class="nav-link " href="#portfolio">About us</a>
+                        <a class="nav-link" href="#aboutUs">About us</a>
                     </li>
                     <li class="nav-item ml-5 text-center">
-                        <a class="nav-link " href="#portfolio">Why Stayawaykey</a>
+                        <a class="nav-link " href="#whyUs">Why Stayawaykey</a>
                     </li>
                     <li class="nav-item ml-5 text-center">
                         <a class="nav-link head-link head-link--blue" href="#portfolio">Join us</a>
@@ -26,12 +26,15 @@
                     </li>
                     <li class="nav-item ml-5 text-center dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg width="16px" height="16px">
+                                <use xlink:href="#globus"></use>
+                            </svg>
                             En
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right setting" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item px-4" href="#">En</a>
-                            <a class="dropdown-item px-4" href="#">Ua</a>
-                            <a class="dropdown-item px-4" href="#">Ru</a>
+                        <div class="dropdown-menu dropdown-menu-right setting dropdown-user" aria-labelledby="navbarDropdown" >
+                            <a class="dropdown-item dropdown-user__link" href="#">En</a>
+                            <a class="dropdown-item dropdown-user__link" href="#">Ua</a>
+                            <a class="dropdown-item dropdown-user__link" href="#">Ru</a>
                         </div>
                     </li>
                 </ul>

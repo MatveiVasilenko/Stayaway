@@ -40,7 +40,6 @@ body {
 	}
 }
 
-
 //Header 
 .nav-link {
 	padding: 10px 20px;
@@ -66,7 +65,17 @@ body {
 
 	}
 }
+//Dropdown users setting
 
+.dropdown-user {
+	min-width: 3rem;
+	background: transparent;
+	&__link {
+		color: $color-font;
+		font-size: 1.3rem;
+		font-weight: 300;
+	}
+}
 
 
 //First section
@@ -151,12 +160,7 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	// &__item img {
-	// 	@media screen and (max-width: 1024px){
-	// 	width: 250px !important;
-	// 	height: 10vh;
-	// 	}
-	// }
+
 	@media screen and (max-width: 1366px){
 		padding: 5px 20px;
 	}
@@ -164,7 +168,51 @@ body {
 		padding: 0px 20px;
 	}
 }
+.vertical-social {
+		position: absolute;
+		left: -3%;
+		top: 50%;
+		display: flex;
+		// flex-direction: column;
+		transform: rotate(-90deg);
+		@media screen and (max-width: 1024px){
+			display: none;
+		}
 
+	&__title {
+		color: $color-font;
+		font-weight: 300;
+		padding-right: 20px;
+
+	}
+	&__icons {
+		// transform: rotate(-90deg);
+		color: $color-font;
+		font-weight: 300;
+	}
+}
+.scroll-down {
+	position: absolute;
+	right: 0%;
+	top: 50%;
+	display: flex;
+	// justify-content: center;
+	align-items: center;
+	transform: rotate(90deg);
+	@media screen and (max-width: 1024px){
+		display: none;
+	}
+	
+
+	&__title {
+		margin-right: 30px;
+
+	}
+	&__arrow {
+	transform: rotate(-90deg);
+
+	}
+}
 
 //Section-key
 
@@ -250,6 +298,34 @@ body {
 	}
 
 }
+svg path {
+	// fill:inherit;
+	stroke:inherit;
+	stroke-width:inherit;
+}
+.tes {
+	fill: rgb(204,204,204);
+	stroke: rgb(204,204,204);
+	&:hover {
+	fill:rgb(2, 169, 243);
+	stroke:rgb(2, 169, 243);
+	cursor: pointer;
+}
+}
+.arrow {
+	&__left {
+		position: absolute;
+		left: -5%;
+		top: 30%;		
+	}
+	&__right {
+		position: absolute;
+		right: -5%;
+		top: 30%;
+	}
+}
+
+
 .test2 {
 	height: 300px;
 	overflow: hidden;
@@ -270,19 +346,26 @@ body {
 		padding-left: 20px;
 	}
 }
-
+.test1 {
+	box-shadow: -10px 15px 20px 10px rgba(0,0,0, 0.1);
+	border-radius: 50px;
+}
 //Footer 
 
 .lisp {
-		text-decoration: none;
-		list-style-type: none;
-		padding: 25px 0 ;
-		margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 	li {
-		padding: 3px 0;
+		padding-bottom: 5px;
 		& a {
 			text-decoration: none;
 		}		
+	}
+	&__social {
+		padding: 0px 10px;
+
 	}
 }
 .footer-line {
@@ -338,4 +421,9 @@ body {
 		// display: inline-block;
 	}
 
+}
+
+
+.color-menu {
+	color: $subcolor-font;
 }
