@@ -44,15 +44,18 @@ $('.team').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        arrows:false
+        // arrows:false
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-        arrows:false
+        arrows:false,
+        autoplay: true,
+
+
 
       }
     },
@@ -61,7 +64,9 @@ $('.team').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows:false
+        arrows:false,
+        autoplay: true,
+
         
       }
     }

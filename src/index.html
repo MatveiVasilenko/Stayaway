@@ -21,17 +21,47 @@
 						<form>
 							<div class="form-row">
 								<div class="form-group col-lg-3 col-md-6 col-12 form-first">
-									<input type="text" class="form-control form-first__size" placeholder="Name">
+									<input type="text" class="form-control form-first__size" placeholder="Your name">
 								</div>
 								<div class="form-group col-lg-3 col-md-6 col-12 form-first">
-									<input type="email" class="form-control form-first__size" placeholder="Email">
+									<input type="email" class="form-control form-first__size" placeholder="Email adress">
 								</div>
 								<div class="form-group col-lg-3 col-md-6 col-12 form-first">
-									<input type="email" class="form-control form-first__size" placeholder="Email">
+									<input type="text" class="form-control form-first__size" placeholder="Platform type Country">
 								</div>
 								<div class="form-group col-lg-3 col-md-6 col-12 form-first">
-									<button type="button" data-toggle="modal" data-target="#exampleModal" class="btn form-first__btn col-12">Confirm identity</button>
+									<button type="button" class="btn form-first__btn col-12" data-toggle="modal" data-target="#exampleModalCenter">
+									  Send
+									</button>
 								</div>
+								
+
+									<!-- Modal -->
+									<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									  <div class="modal-dialog modal-dialog-centered" role="document">
+									    <div class="modal-content modalSend">
+											<div class="modalSend__list">
+												<svg class="" width="160px" height="163px">
+										        	<defs>
+														<linearGradient id="PSgrad_0" x1="0%" x2="100%" y1="0%" y2="0%">
+														  <stop offset="0%" stop-color="rgb(0,132,195)" stop-opacity="1" />
+														  <stop offset="100%" stop-color="rgb(6,166,223)" stop-opacity="1" />
+														</linearGradient>
+													</defs>
+										        	<use xlink:href="#message"></use>
+										        </svg>
+											</div>
+									        <button type="button" class="modalSend__cross" data-dismiss="modal" aria-label="Close">
+									          <svg  width="13px" height="13px">
+									          	<use xlink:href="#cross"></use>
+									          </svg>
+									        </button>
+										    <div class="modalSend__text">
+										        Your Message Has Been Sent
+										    </div>
+									    </div>
+									  </div>
+									</div>
 							</div>
 						</form>
 					</div>
@@ -51,7 +81,7 @@
 							<img class="w-100" src="img/laag4.png" alt="">
 						</div>
 						<div class="col-2 clients__item">
-							<img class="w-100" src="img/laag5.png" alt="">
+							<img class="w-100 px-3" src="img/laag5.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -60,34 +90,47 @@
 						Follow us:
 					</div>
 					<ul class="lisp d-flex justify-content-start">
-						<li class="lisp vertical-social__icons">
-							<a href="">
-								<i class="fab fa-facebook-f"></i>
+						<li class="lisp ">
+							<a class="vertical-social__icons test3" href="">
+								<i class="fab fa-facebook-f icon-hover"></i>
 							</a>
 						</li>
-						<li class="">
-							<a href="">
-								<i class="fab fa-instagram"></i>
+						<li class="lisp">
+							<a class="vertical-social__icons" href="">
+								<i class="fab fa-instagram icon-hover"></i>
 							</a>
 						</li>
-						<li class="">
-							<a href="">
-								<i class="fab fa-twitter"></i>
+						<li class="lisp">
+							<a class="vertical-social__icons" href="">
+								<i class="fab fa-twitter icon-hover"></i>
 							</a>
 						</li>
 					</ul>
 				</div>
-				<div class="scroll-down">
-					<div class="scroll-down__title">
-						Scroll Down
-					</div>
+				<a href="#about" class="scroll-down">
 					<svg class="scroll-down__arrow" width="9px" height="50px">
 						<use xlink:href="#scrollDown"></use>
 					</svg>
+					<div class="scroll-down__title">
+						Scroll Down
+					</div>
 					
-				</div>
-			</div>			
+				</a>
+			</div>
 		</section>
+
+			<section class="cookie text-center none" id="cookie">
+				<div class="container">
+					<div class="cookie__title">
+						Cookie Policy
+					</div>
+					<p class="cookie__text">
+						Stayawaykey uses cookies to keep your preferences, to provide insight into how you use our website and to offer personalized advertisements.
+						By using our website and clicking on "I agree" you agree to the use of cookies as described in our cookie policy.
+					</p>
+					<button id="cookieBtn" type="submit" class=" cookie__btn">I agree</button>
+				</div>
+			</section>			
 
 		<section class="section section__img section--padding" id="about" style="background-image: url(img/bg1.jpg)">
 			<div class="container">
@@ -196,13 +239,13 @@
 				<div class="row">
 					<div class="col-12 col-md-6 key">
 						<img class="key__img" src="img/find1.png" alt="">
-						<p class="key__article">
+						<p class="key__article text-center">
 							Stayawaykey makes sure that you can share your unused seats in your car with others who, like you, have the same departure point as your destination. In addition, as a driver and passenger you can set certain preferences so that a suitable match is made between you and your future fellow passengers.
 						</p>
 					</div>
 					<div class="col-12 col-md-6 key">
 						<img class="key__img key__img--pad" src="img/find2.png" alt="">
-						<p class="key__article">
+						<p class="key__article text-center">
 							As a passenger you pay an amount that is lower than the cost of public transport and as a driver you receive the amount that your fellow passenger (s) have paid. This allows you as a passenger and driver to save on your transport costs. Loading space can also be shared, through our marketplace it is possible to offer or search for cargo space . If this is unused, you can earn extra money with this.
 						</p>
 					</div>
@@ -210,13 +253,13 @@
 				<div class="row">
 					<div class="col-12 col-md-6 key">
 						<img class="key__img key__img--pad" src="img/find3.png" alt="">
-						<p class="key__article">
+						<p class="key__article text-center">
 							It is also possible to rent your car through our sensor that ensures that your car can be shared with others. This sensor can be built into every car and from that moment it is possible to open a car and determine the location so that you can share your car safely, reliably and without hassle. There is also a payment function that you can activate so that you as a driver at an affordable price a car can borrow and as owner can earn on your car so you can ultimately save on your car costs.
 						</p>
 					</div>
 					<div class="col-12 col-md-6 key">
 						<img class="key__img key__img--pad" src="img/find4.png" alt="">
-						<p class="key__article">
+						<p class="key__article text-center">
 							In addition, for business use at any time you share a car (ride) the kilometers are stored and tracked with which you can later declare or use all kilometers for the tax authorities. It is also possible to set reminders in the case of maintenance and the like for a certain number of kilometers. This not only gives you more control over your car, it is also possible to gain more insight into car costs and car use.
 						</p>
 					</div>
@@ -294,21 +337,29 @@
 							<img class="sliders__img--pos" src="img/new1.jpg" alt="">
 						</div>
 						<div class="sliders sliders__name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, odio?</div>
-						<div class="sliders sliders__proffession">5.10.2017</div>
+						<div class="sliders sliders__proffession">
+							5.10.2017
+						</div>
 					</div>
 					<div class="sliders">
 						<div class="sliders__img sliders__img--h200">
 							<img class="sliders__img--pos" src="img/new2.jpg" alt="">
 						</div>
-						<div class="sliders sliders__name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, inventore.</div>
-						<div class="sliders sliders__proffession">28.09.2017</div>
+						<div class="sliders sliders__name">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, inventore.
+					</div>
+						<div class="sliders sliders__proffession">
+							28.09.2017
+						</div>
 					</div>
 					<div class="sliders">
 						<div class="sliders__img sliders__img--h200">
 							<img class="sliders__img--pos" src="img/new3.jpg" alt="">
 						</div>
 						<div class="sliders sliders__name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, a.</div>
-						<div class="sliders sliders__proffession">19.09.2017</div>
+						<div class="sliders sliders__proffession">
+							19.09.2017
+						</div>
 					</div>
 					<div class="sliders">
 						<div class="sliders__img sliders__img--h200">
@@ -334,7 +385,7 @@
 					<div class="col-lg-4 offset-lg-1 order-md-first order-last text-center">
 						<img class="test1" src="img/mobile.png" alt="">
 					</div>
-					<div class="col-lg-6 order-md-last order-first offset-lg-1 text-center text-lg-left">
+					<div class="col-lg-6 order-md-last order-first offset-lg-1 text-center text-lg-left mb-3">
 						<h2 class="h2-title h2-title--smallMargin">Let’s talk and start sharing</h2>
 						<p class="key__article">Start sharing your rides, car, fleet or combined and get a free month</p>
 						<div class="key__title">
@@ -378,32 +429,56 @@
 
 	//= _scripts.html
 		<script>
-			$('#myModal').on('shown.bs.modal', function () {
-  				$('#myModal').trigger('focus')
-			})
-			// alert("Hello");
+
+
 			$(document).scroll(function() {
 		  		var menu = $("#menu");
 		  		var link = $(".nav-link");
 		  		var img = $("#image");
 		  		var dropdown = $(".dropdown-item");
+		  		var toggler = $("#toggler");
+		  		var globus = $('#globs');
 
 
 		    	var top = $(this).scrollTop();
-		    	if ( top >= 400 ) {
+		    	if ( top >= 200 ) {
 				menu.css("background" ,"#fff");
 				link.addClass('color-menu');
 				img.attr("src", "img/logo-scroll.png");
 				dropdown.addClass('color-menu');
+				toggler.removeClass('white');
+				globus.addClass('globus-blue');
 
-		    } else if ( top < 400) {
+
+
+		    } else if ( top < 200) {
 				menu.css("background", "transparent");
 				link.removeClass('color-menu');
 				img.attr("src", "img/logo.png");
 				dropdown.removeClass('color-menu');
+				toggler.addClass('white');
+				globus.removeClass('globus-blue');
+
+
 
 		    }
   		});
+		$(document).scroll(function(){
+			var cookie = $('#cookie');
+
+			var top = $(this).scrollTop();
+		    	if ( top = 1024 ) {
+				cookie.removeClass('none');
+		    }
+
+
+		});
+		$('#cookieBtn').click(function(){
+			var cookie = $('#cookie');
+			
+			cookie.addClass('size_zero');
+		});
+
 
 		// $("#test").hover(function() {
 		//   		// var arrow = $("#test");
@@ -425,7 +500,7 @@
 	<svg style="display: none;" xmlns="http://www.w3.org/2000/svg" >
 		<!-- Globus -->
 		<symbol id="globus" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" >
-			<path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+			<path fill-rule="evenodd" 
 			 d="M8.000,-0.001 C3.582,-0.001 -0.000,3.581 -0.000,8.000 C-0.000,12.418 3.582,16.000 8.000,16.000 C12.418,16.000 16.000,12.418 16.000,8.000 C16.000,3.581 12.418,-0.001 8.000,-0.001 ZM12.639,4.195 C12.570,4.253 12.488,4.312 12.423,4.371 C11.928,4.802 11.710,4.976 11.303,4.992 C11.190,4.995 11.084,4.999 10.982,4.999 C10.625,4.999 10.535,4.951 10.422,4.850 C10.364,4.799 10.360,4.694 10.449,4.172 C10.500,3.874 10.551,3.564 10.560,3.239 C10.564,3.018 10.605,2.821 10.652,2.624 C11.421,3.004 12.099,3.538 12.639,4.195 ZM8.484,12.066 C8.235,12.518 7.963,12.682 7.315,13.042 L7.018,13.207 C6.635,13.430 6.290,13.545 5.926,13.624 C4.728,13.182 3.709,12.375 3.011,11.331 C3.035,11.096 3.173,10.967 3.810,10.589 C4.231,10.339 4.755,10.028 5.199,9.535 C5.536,9.159 5.725,8.720 5.876,8.368 C5.876,8.368 5.876,8.366 5.877,8.365 C6.015,8.674 6.214,9.042 6.589,9.337 C7.111,9.754 7.665,9.854 8.069,9.927 C8.431,9.991 8.517,10.021 8.575,10.093 C8.844,10.434 9.075,10.967 8.484,12.066 ZM9.717,13.747 C9.901,13.545 10.079,13.316 10.240,13.021 C11.310,11.035 10.779,9.659 10.143,8.853 C9.603,8.171 8.893,8.043 8.424,7.957 C8.131,7.906 7.959,7.871 7.831,7.769 C7.776,7.726 7.696,7.537 7.639,7.399 C7.458,6.970 7.121,6.172 6.109,6.032 C4.758,5.859 4.288,6.997 4.038,7.579 C3.935,7.819 3.827,8.069 3.712,8.198 C3.473,8.462 3.140,8.659 2.789,8.869 C2.585,8.989 2.362,9.131 2.143,9.293 C2.052,8.876 2.000,8.443 2.000,8.000 C2.000,4.686 4.686,1.999 8.000,1.999 C8.244,1.999 8.484,2.019 8.721,2.048 C8.634,2.387 8.569,2.761 8.560,3.188 C8.554,3.411 8.514,3.627 8.478,3.833 C8.363,4.507 8.188,5.524 9.084,6.338 C9.738,6.921 10.411,6.999 10.982,6.999 C11.107,6.999 11.238,6.995 11.376,6.990 C12.445,6.951 13.083,6.441 13.638,5.962 C13.868,6.599 14.000,7.282 14.000,8.000 C14.000,10.716 12.193,13.009 9.717,13.747 Z"/>
 		</symbol>
 		<!-- Slider arrow Left -->
@@ -448,37 +523,11 @@
 			 <path fill-rule="evenodd"  opacity="0.302" fill="rgb(255, 255, 255)"
 			 d="M8.998,44.461 L5.000,48.977 L5.000,49.000 L4.979,49.000 L4.093,50.001 L-0.001,44.431 L-0.002,44.431 L1.188,42.999 L4.000,47.139 L4.000,0.000 L5.000,0.000 L5.000,46.200 L7.788,43.052 L8.998,44.461 Z"/>			
 		</symbol>
-	</svg>
-		<!-- Smallarrow -->
-		<svg 
-			 xmlns="http://www.w3.org/2000/svg"
-			 xmlns:xlink="http://www.w3.org/1999/xlink"
-			 width="11px" height="16px">
-			<path fill-rule="evenodd"  fill="rgb(2, 169, 243)"
-			 d="M0.499,13.718 L6.568,7.890 L0.575,2.317 L2.587,0.503 L10.502,7.860 L2.544,15.501 L2.544,15.503 L0.499,13.718 L0.499,13.718 Z"/>
-		</svg>
-		<!-- ScrollDown -->
-		<svg 
-			 xmlns="http://www.w3.org/2000/svg"
-			 xmlns:xlink="http://www.w3.org/1999/xlink"
-			 width="9px" height="50px">
-			<path fill-rule="evenodd"  opacity="0.302" fill="rgb(255, 255, 255)"
-			 d="M8.998,44.461 L5.000,48.977 L5.000,49.000 L4.979,49.000 L4.093,50.001 L-0.001,44.431 L-0.002,44.431 L1.188,42.999 L4.000,47.139 L4.000,0.000 L5.000,0.000 L5.000,46.200 L7.788,43.052 L8.998,44.461 Z"/>
-		</svg>
-		<!-- Cross -->
-		<svg 
-			 xmlns="http://www.w3.org/2000/svg"
-			 xmlns:xlink="http://www.w3.org/1999/xlink"
-			 width="13px" height="13px">
-			<path fill-rule="evenodd"  fill="rgb(204, 204, 204)"
-			 d="M11.753,12.874 L6.495,7.617 L1.237,12.874 C1.082,13.029 0.830,13.029 0.675,12.874 L0.113,12.311 C-0.042,12.157 -0.042,11.905 0.113,11.750 L5.371,6.493 L0.113,1.234 C-0.042,1.079 -0.042,0.827 0.113,0.672 L0.675,0.109 C0.830,-0.046 1.082,-0.046 1.237,0.109 L6.495,5.368 L11.753,0.109 C11.908,-0.046 12.160,-0.046 12.315,0.109 L12.877,0.672 C13.032,0.827 13.032,1.079 12.877,1.234 L7.619,6.493 L12.877,11.750 C13.032,11.905 13.032,12.157 12.877,12.311 L12.315,12.874 C12.160,13.029 11.908,13.029 11.753,12.874 Z"/>
-		</svg>
 		<!-- Message -->
-		<svg 
-			 xmlns="http://www.w3.org/2000/svg"
+		<symbol id="message" xmlns="http://www.w3.org/2000/svg"
 			 xmlns:xlink="http://www.w3.org/1999/xlink"
 			 width="160px" height="163px">
-			<defs>
+			 <defs>
 			<linearGradient id="PSgrad_0" x1="0%" x2="100%" y1="0%" y2="0%">
 			  <stop offset="0%" stop-color="rgb(0,132,195)" stop-opacity="1" />
 			  <stop offset="100%" stop-color="rgb(6,166,223)" stop-opacity="1" />
@@ -489,13 +538,30 @@
 			 d="M151.239,75.177 L79.044,147.377 C74.036,152.383 65.889,152.383 60.882,147.377 L39.823,126.317 L10.002,156.140 C8.857,157.284 7.002,157.284 5.858,156.140 C5.286,155.568 5.000,154.818 5.000,154.068 C5.000,153.318 5.286,152.569 5.858,151.997 L35.679,122.173 L30.371,116.865 L17.626,129.610 C16.482,130.754 14.627,130.754 13.483,129.610 C12.911,129.039 12.625,128.288 12.625,127.538 C12.625,126.789 12.911,126.039 13.483,125.466 L26.228,112.721 L14.621,101.113 C12.117,98.610 10.866,95.321 10.866,92.032 C10.866,88.744 12.117,85.455 14.621,82.951 L86.816,10.752 C91.823,5.744 99.971,5.744 104.978,10.752 L151.239,57.015 C153.664,59.441 155.000,62.666 155.000,66.097 C155.000,69.526 153.664,72.752 151.239,75.177 ZM18.764,96.970 L65.025,143.233 C65.839,144.047 66.806,144.612 67.834,144.939 L67.834,90.221 L16.966,90.221 C16.343,92.552 16.938,95.145 18.764,96.970 ZM88.226,17.629 L21.497,84.361 L32.135,84.361 L62.764,53.730 C63.909,52.586 65.764,52.586 66.908,53.730 C68.052,54.875 68.052,56.730 66.908,57.874 L40.422,84.361 L48.957,84.361 L61.788,71.530 C62.932,70.385 64.787,70.386 65.931,71.530 C67.076,72.674 67.075,74.529 65.931,75.673 L57.244,84.361 L81.243,84.361 C85.094,84.361 88.226,81.229 88.226,77.378 L88.226,17.629 ZM81.244,90.221 L73.694,90.221 L73.694,144.193 C74.121,143.922 74.528,143.605 74.900,143.233 L147.096,71.035 C147.466,70.665 147.787,70.260 148.061,69.828 L135.953,69.828 C135.953,69.828 135.952,69.830 135.952,69.830 L114.857,90.926 C113.713,92.070 111.858,92.070 110.714,90.926 C110.142,90.353 109.856,89.604 109.856,88.854 C109.856,88.103 110.142,87.354 110.714,86.783 L127.667,69.828 L94.086,69.828 L94.086,77.378 C94.086,84.460 88.325,90.221 81.244,90.221 ZM147.095,61.159 L100.834,14.896 C99.009,13.070 96.417,12.475 94.086,13.097 L94.086,63.968 L148.810,63.968 C148.476,62.920 147.896,61.959 147.095,61.159 ZM72.008,51.563 C71.234,51.563 70.481,51.249 69.937,50.704 C69.392,50.160 69.078,49.404 69.078,48.632 C69.078,47.859 69.392,47.106 69.937,46.561 C70.481,46.013 71.234,45.702 72.008,45.702 C72.778,45.702 73.534,46.013 74.079,46.561 C74.624,47.106 74.937,47.859 74.937,48.632 C74.937,49.404 74.624,50.160 74.079,50.704 C73.534,51.249 72.778,51.563 72.008,51.563 ZM10.013,137.221 C9.468,137.766 8.715,138.080 7.941,138.080 C7.171,138.080 6.415,137.766 5.870,137.221 C5.325,136.677 5.012,135.921 5.012,135.150 C5.012,134.379 5.325,133.624 5.870,133.079 C6.415,132.534 7.171,132.220 7.941,132.220 C8.712,132.220 9.468,132.534 10.013,133.079 C10.561,133.624 10.871,134.379 10.871,135.150 C10.871,135.921 10.561,136.677 10.013,137.221 ZM38.069,138.688 C39.213,137.544 41.068,137.544 42.212,138.688 C43.356,139.833 43.356,141.688 42.212,142.832 L28.907,156.139 C27.763,157.282 25.908,157.282 24.763,156.139 C24.191,155.566 23.905,154.816 23.905,154.066 C23.905,153.316 24.192,152.567 24.763,151.995 L38.069,138.688 Z"/>
 			<path fill="url(#PSgrad_0)"
 			 d="M151.239,75.177 L79.044,147.377 C74.036,152.383 65.889,152.383 60.882,147.377 L39.823,126.317 L10.002,156.140 C8.857,157.284 7.002,157.284 5.858,156.140 C5.286,155.568 5.000,154.818 5.000,154.068 C5.000,153.318 5.286,152.569 5.858,151.997 L35.679,122.173 L30.371,116.865 L17.626,129.610 C16.482,130.754 14.627,130.754 13.483,129.610 C12.911,129.039 12.625,128.288 12.625,127.538 C12.625,126.789 12.911,126.039 13.483,125.466 L26.228,112.721 L14.621,101.113 C12.117,98.610 10.866,95.321 10.866,92.032 C10.866,88.744 12.117,85.455 14.621,82.951 L86.816,10.752 C91.823,5.744 99.971,5.744 104.978,10.752 L151.239,57.015 C153.664,59.441 155.000,62.666 155.000,66.097 C155.000,69.526 153.664,72.752 151.239,75.177 ZM18.764,96.970 L65.025,143.233 C65.839,144.047 66.806,144.612 67.834,144.939 L67.834,90.221 L16.966,90.221 C16.343,92.552 16.938,95.145 18.764,96.970 ZM88.226,17.629 L21.497,84.361 L32.135,84.361 L62.764,53.730 C63.909,52.586 65.764,52.586 66.908,53.730 C68.052,54.875 68.052,56.730 66.908,57.874 L40.422,84.361 L48.957,84.361 L61.788,71.530 C62.932,70.385 64.787,70.386 65.931,71.530 C67.076,72.674 67.075,74.529 65.931,75.673 L57.244,84.361 L81.243,84.361 C85.094,84.361 88.226,81.229 88.226,77.378 L88.226,17.629 ZM81.244,90.221 L73.694,90.221 L73.694,144.193 C74.121,143.922 74.528,143.605 74.900,143.233 L147.096,71.035 C147.466,70.665 147.787,70.260 148.061,69.828 L135.953,69.828 C135.953,69.828 135.952,69.830 135.952,69.830 L114.857,90.926 C113.713,92.070 111.858,92.070 110.714,90.926 C110.142,90.353 109.856,89.604 109.856,88.854 C109.856,88.103 110.142,87.354 110.714,86.783 L127.667,69.828 L94.086,69.828 L94.086,77.378 C94.086,84.460 88.325,90.221 81.244,90.221 ZM147.095,61.159 L100.834,14.896 C99.009,13.070 96.417,12.475 94.086,13.097 L94.086,63.968 L148.810,63.968 C148.476,62.920 147.896,61.959 147.095,61.159 ZM72.008,51.563 C71.234,51.563 70.481,51.249 69.937,50.704 C69.392,50.160 69.078,49.404 69.078,48.632 C69.078,47.859 69.392,47.106 69.937,46.561 C70.481,46.013 71.234,45.702 72.008,45.702 C72.778,45.702 73.534,46.013 74.079,46.561 C74.624,47.106 74.937,47.859 74.937,48.632 C74.937,49.404 74.624,50.160 74.079,50.704 C73.534,51.249 72.778,51.563 72.008,51.563 ZM10.013,137.221 C9.468,137.766 8.715,138.080 7.941,138.080 C7.171,138.080 6.415,137.766 5.870,137.221 C5.325,136.677 5.012,135.921 5.012,135.150 C5.012,134.379 5.325,133.624 5.870,133.079 C6.415,132.534 7.171,132.220 7.941,132.220 C8.712,132.220 9.468,132.534 10.013,133.079 C10.561,133.624 10.871,134.379 10.871,135.150 C10.871,135.921 10.561,136.677 10.013,137.221 ZM38.069,138.688 C39.213,137.544 41.068,137.544 42.212,138.688 C43.356,139.833 43.356,141.688 42.212,142.832 L28.907,156.139 C27.763,157.282 25.908,157.282 24.763,156.139 C24.191,155.566 23.905,154.816 23.905,154.066 C23.905,153.316 24.192,152.567 24.763,151.995 L38.069,138.688 Z"/>
-		</svg>
+l		</symbol>
+		<!-- Cross -->
+		<symbol id="cross" xmlns="http://www.w3.org/2000/svg"
+			 xmlns:xlink="http://www.w3.org/1999/xlink"
+			 width="13px" height="13px">
+			<path fill-rule="evenodd"  fill="rgb(204, 204, 204)"
+			 d="M11.753,12.874 L6.495,7.617 L1.237,12.874 C1.082,13.029 0.830,13.029 0.675,12.874 L0.113,12.311 C-0.042,12.157 -0.042,11.905 0.113,11.750 L5.371,6.493 L0.113,1.234 C-0.042,1.079 -0.042,0.827 0.113,0.672 L0.675,0.109 C0.830,-0.046 1.082,-0.046 1.237,0.109 L6.495,5.368 L11.753,0.109 C11.908,-0.046 12.160,-0.046 12.315,0.109 L12.877,0.672 C13.032,0.827 13.032,1.079 12.877,1.234 L7.619,6.493 L12.877,11.750 C13.032,11.905 13.032,12.157 12.877,12.311 L12.315,12.874 C12.160,13.029 11.908,13.029 11.753,12.874 Z"/>
+		</symbol>
+	</svg>
+		<!-- Smallarrow -->
+		<!-- <svg 
+			 xmlns="http://www.w3.org/2000/svg"
+			 xmlns:xlink="http://www.w3.org/1999/xlink"
+			 width="11px" height="16px">
+			<path fill-rule="evenodd"  fill="rgb(2, 169, 243)"
+			 d="M0.499,13.718 L6.568,7.890 L0.575,2.317 L2.587,0.503 L10.502,7.860 L2.544,15.501 L2.544,15.503 L0.499,13.718 L0.499,13.718 Z"/>
+		</svg> -->
+		
 	</svg>		
 		
 
 	//= _footer.html
 	
 	
-
+	
 </body>
 </html>
